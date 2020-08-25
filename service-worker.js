@@ -14,7 +14,7 @@
 importScripts("https://storage.googleapis.com/workbox-cdn/releases/4.3.1/workbox-sw.js");
 
 importScripts(
-  "/sparkle-of-life/precache-manifest.1b3d1655cdd6b2b65923eb12ebfcd8a2.js"
+  "/sparkle-of-life/precache-manifest.0294463c06bc05cadb9bceff1c4ef019.js"
 );
 
 self.addEventListener('message', (event) => {
