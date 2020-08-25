@@ -1,19 +1,19 @@
 {
   "files": {
-    "main.js": "/static/js/main.1b3e30a0.chunk.js",
-    "main.js.map": "/static/js/main.1b3e30a0.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.b75e0f3b.js",
-    "runtime-main.js.map": "/static/js/runtime-main.b75e0f3b.js.map",
-    "static/js/2.78b6e980.chunk.js": "/static/js/2.78b6e980.chunk.js",
-    "static/js/2.78b6e980.chunk.js.map": "/static/js/2.78b6e980.chunk.js.map",
-    "index.html": "/index.html",
-    "precache-manifest.ba40fbe4ec9489a6adbdedc1470a21d8.js": "/precache-manifest.ba40fbe4ec9489a6adbdedc1470a21d8.js",
-    "service-worker.js": "/service-worker.js",
-    "static/js/2.78b6e980.chunk.js.LICENSE.txt": "/static/js/2.78b6e980.chunk.js.LICENSE.txt"
+    "main.js": "/sparkle-of-life/static/js/main.07d34816.chunk.js",
+    "main.js.map": "/sparkle-of-life/static/js/main.07d34816.chunk.js.map",
+    "runtime-main.js": "/sparkle-of-life/static/js/runtime-main.9e3f8302.js",
+    "runtime-main.js.map": "/sparkle-of-life/static/js/runtime-main.9e3f8302.js.map",
+    "static/js/2.798523f5.chunk.js": "/sparkle-of-life/static/js/2.798523f5.chunk.js",
+    "static/js/2.798523f5.chunk.js.map": "/sparkle-of-life/static/js/2.798523f5.chunk.js.map",
+    "index.html": "/sparkle-of-life/index.html",
+    "precache-manifest.1b3d1655cdd6b2b65923eb12ebfcd8a2.js": "/sparkle-of-life/precache-manifest.1b3d1655cdd6b2b65923eb12ebfcd8a2.js",
+    "service-worker.js": "/sparkle-of-life/service-worker.js",
+    "static/js/2.798523f5.chunk.js.LICENSE.txt": "/sparkle-of-life/static/js/2.798523f5.chunk.js.LICENSE.txt"
   },
   "entrypoints": [
-    "static/js/runtime-main.b75e0f3b.js",
-    "static/js/2.78b6e980.chunk.js",
-    "static/js/main.1b3e30a0.chunk.js"
+    "static/js/runtime-main.9e3f8302.js",
+    "static/js/2.798523f5.chunk.js",
+    "static/js/main.07d34816.chunk.js"
   ]
 }
