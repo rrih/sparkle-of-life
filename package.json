@@ -1,9 +1,8 @@
 {
   "name": "sparkle-of-life",
-  "version": "1.0.0",
-  "description": "",
+  "version": "0.0.1",
   "author": "rrih",
-  "license": "MIT",
+  "homepage": "https://rrih.github.io/sparkle-of-life",
   "dependencies": {
     "@fortawesome/fontawesome-svg-core": "^1.2.30",
     "@fortawesome/free-brands-svg-icons": "^5.14.0",
