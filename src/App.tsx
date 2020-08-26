@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 const Title = styled.div`
   color: black;
-  font-size: 5em;
+  font-size: 300%;
 `
 const All = styled.div`
   text-align: center;
@@ -13,6 +13,7 @@ const Button = styled.button`
   font-size: 20px;
   margin: 10px;
   padding: 10px 17px;
+  bottom: 10px;
 `
 
 // 目玉が5個
@@ -51,26 +52,40 @@ const Pupil = styled.div`
 // 細胞が12個
 const Cell = styled.div`
   background-color: #ff0000;
-  height: 10%;
-  width: 10%;
+  height: ${() => {
+    let y = Math.random() * 100;
+    return `${y}px`;
+  }};
+  width: ${() => {
+    let x = Math.random() * 100;
+    return `${x}px`;
+  }};
   border-radius: 80% 80% 80% 80%;
   position: relative;
-  // top: 30%;
-  // left: 40%;
   top: ${() => {
-    const posY = Math.floor(Math.random() * 10);
-    return `${posY}%`;
+    // const posY = positions[countY][0];
+    // countY++;
+    
+    let y = Math.random() * 100;
+    return `${y}%`;
   }};
   left: ${() => {
-    const posX = Math.floor(Math.random() * 100);
-    return `${posX}%`;
+    // const posX = positions[countX][1];
+    // countX++;
+    let x = Math.random() * 100;
+    return `${x}%`;
   }}
 `
 
+
 const Screen = styled.div`
-  height: 500px;
-  width 500px;
+  height: 400px;
+  width: 400px;
   text-align: center;
+  display: flex;
+  position: relative;
+  top: -50%;
+  left: -25%;
 `
 
 // 引数：座標、大きさを渡す
@@ -81,6 +96,8 @@ const Screen = styled.div`
 //   })
 // };
 
+// const defaultPositions = positions;
+
 // ランダム
 export function randTwenty() {
   let twentyList: number[] = [];
@@ -89,7 +106,6 @@ export function randTwenty() {
     if (!twentyList.includes(resultOfRandomGen)) {
       twentyList.push(resultOfRandomGen);
       i++;
-      // console.log(resultOfRandomGen);
     }
     else {
       continue;
@@ -107,22 +123,31 @@ export function randBools() {
   return resultBools;
 }
 
+// async function screenShotAndTweet() {
+//   const browser = await puppeteer.launch();
+//   const page = await browser.newPage();
+//   await page.screenshot({ path: 'lifes.png' });
+//   // await browser.close();
+// }
+
+function generateCell(isEye) {
+  return isEye ? <Cell><Eye><Pupil></Pupil></Eye></Cell> : <Cell></Cell>
+}
+
 export const App = () => {
-  const [isLifes, setIsLifes] = useState<boolean[]>();
+  const [isLifes, setIsLifes] = useState<boolean[]>(randBools());
   return (
     <All>
       <Title>sparkle of life</Title>
       <Screen className="mx-auto">
         {isLifes != null && isLifes.map((res, i) => {
-          return res ? <Cell key={i}><Eye><Pupil></Pupil></Eye></Cell> : <Cell key={i}></Cell>
+          return generateCell(res);
         })}
       </Screen>
-      <div>
-        <Button type="button" className="btn btn-outline-primary rounded-pill" onClick={() => setIsLifes(randBools())}>Generate life</Button>
-      </div>
-      <div>
+      <Button type="button" className="btn btn-outline-primary rounded-pill" onClick={() => setIsLifes(randBools())}>Generate life</Button>
+      {/* <div>
         <Button type="button" className="btn btn-primary rounded-pill"><i className="fab fa-twitter"></i> Tweet sparkle of life</Button>
-      </div>
+      </div> */}
     </All>
   );
 }
