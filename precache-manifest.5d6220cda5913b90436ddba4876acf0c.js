@@ -1,6 +1,6 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "8c62381f933b4e5ae6aca9bbe3f023c9",
+    "revision": "d3bf3ea4375bb918a54ca97d355d5eee",
     "url": "/sparkle-of-life/index.html"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/sparkle-of-life/static/js/2.6c4b6309.chunk.js.LICENSE.txt"
   },
   {
-    "revision": "d7c83775cfa54950713a",
-    "url": "/sparkle-of-life/static/js/main.ae6422b9.chunk.js"
+    "revision": "5e9ca41ec2556f3768e9",
+    "url": "/sparkle-of-life/static/js/main.52169113.chunk.js"
   },
   {
     "revision": "e359ab85e585e4906ff2",
